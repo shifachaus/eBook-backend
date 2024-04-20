@@ -1,1 +1,10 @@
-console.log("Welcome to eBook api");
+import app from "./src/app";
+
+const startServer = () => {
+  const port = process.env.PORT || 3000;
+  app.listen(port, () => {
+    console.log(`Listening on post ${port}`);
+  });
+};
+
+startServer();
