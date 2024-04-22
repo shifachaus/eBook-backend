@@ -52,7 +52,6 @@ const createBook = async (req: Request, res: Response, next: NextFunction) => {
     });
 
     // delete temp files
-
     await fs.promises.unlink(filePath);
     await fs.promises.unlink(bookFilePath);
 
