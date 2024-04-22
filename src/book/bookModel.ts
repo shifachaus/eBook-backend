@@ -14,13 +14,25 @@ const bookSchema = new mongoose.Schema<Book>(
     },
 
     coverImage: {
-      type: String,
-      required: true,
+      public_id: {
+        type: String,
+        required: true,
+      },
+      url: {
+        type: String,
+        required: true,
+      },
     },
 
     file: {
-      type: String,
-      required: true,
+      public_id: {
+        type: String,
+        required: true,
+      },
+      url: {
+        type: String,
+        required: true,
+      },
     },
 
     genre: {
